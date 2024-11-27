@@ -1,0 +1,143 @@
+/* Resetando algumas margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Cor de fundo escura */
+    color: #f4f4f9; /* Cor clara para o texto */
+}
+
+/* Container central */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #444; /* Fundo mais escuro para a área principal */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Aumento do espaço entre o formulário e a lista */
+    flex-wrap: wrap; /* Para garantir que em telas menores o layout se ajuste */
+}
+
+/* Header */
+header {
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4CAF50; /* Cor verde para o título */
+}
+
+/* Formulário */
+.form-container {
+    width: 50%; /* O formulário ocupa metade da largura */
+    padding-right: 20px; /* Ajuste para empurrar o formulário para a direita */
+}
+
+h2 {
+    color: #f4f4f9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f4f4f9;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #555; /* Fundo mais escuro para os inputs */
+    color: #f4f4f9; /* Texto claro nos campos de input */
+}
+
+form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Lista de contatos */
+.contact-list {
+    width: 45%; /* Lista ocupa quase metade da tela */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+.contact-list ul {
+    list-style-type: none;
+}
+
+.contact-list li {
+    padding: 10px;
+    background-color: #555; /* Fundo mais escuro para cada item da lista */
+    border: 1px solid #888; /* Borda um pouco mais clara */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f4f4f9; /* Texto claro */
+}
+
+/* Botões de editar e excluir */
+.contact-list button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.contact-list button:hover {
+    background-color: #d32f2f;
+}
+
+.contact-list button:first-child {
+    background-color: #ffa500;
+}
+
+.contact-list button:first-child:hover {
+    background-color: #ff8c00;
+}
+
+/* Barra de pesquisa */
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #555;
+    color: #f4f4f9;
+    border: 1px solid #888;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#search::placeholder {
+    color: #aaa;
+}
